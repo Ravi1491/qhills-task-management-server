@@ -1,0 +1,27 @@
+{
+  "name": "node_project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run init:db && nodemon start app.js",
+    "init:db": "npx sequelize-cli db:migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.3",
+    "sequelize": "^6.34.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  },
+  "keywords": [],
+  "description": ""
+}
