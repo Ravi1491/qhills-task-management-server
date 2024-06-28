@@ -12,11 +12,11 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-app.use("/", routes);
 
 app.get("/health", async (req, res) => {
   res.send("I am healthy");
 });
+app.use("/", routes);
 
 // app.get('/', async (req, res) => {
 //     res.send('done');
