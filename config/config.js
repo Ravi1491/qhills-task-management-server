@@ -1,24 +1,28 @@
 require("dotenv").config();
+
 module.exports = {
   development: {
-    username: process.env.USERNAME,
+    username: process.env.DB_USERNAME,
     password: process.env.PASSWORD,
     database: process.env.DATABASENAME,
     host: process.env.HOST,
-    dialect: process.env.DIALECT
+    port: process.env.DB_PORT,
+    dialect: process.env.DIALECT,
   },
   test: {
-    username: process.env.USERNAME,
+    username: process.env.DB_USERNAME,
     password: process.env.PASSWORD,
     database: process.env.DATABASENAME,
     host: process.env.HOST,
-    dialect: process.env.DIALECT
+    port: process.env.DB_PORT,
+    dialect: process.env.DIALECT,
   },
   production: {
-    username: process.env.USERNAME,
+    username: process.env.DB_USERNAME,
     password: process.env.PASSWORD,
     database: process.env.DATABASENAME,
     host: process.env.HOST,
-    dialect: process.env.DIALECT
-  }
+    port: process.env.DB_PORT,
+    dialect: process.env.DIALECT,
+  },
 };
